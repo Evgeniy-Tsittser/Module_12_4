@@ -1,0 +1,16 @@
+WARNING | Неверный тип данных для объекта Runner | 2024-09-08 12:57:46,362
+Traceback (most recent call last):
+  File "C:\Users\evgen\Project_Practic_11_Mod\test_12_4.py", line 71, in test_run
+    run_2 = Runner(10, 10)
+            ^^^^^^^^^^^^^^
+  File "C:\Users\evgen\Project_Practic_11_Mod\test_12_4.py", line 14, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано int
+WARNING | Неверная скорость для Runner | 2024-09-08 12:57:46,363
+Traceback (most recent call last):
+  File "C:\Users\evgen\Project_Practic_11_Mod\test_12_4.py", line 61, in test_walk
+    run_1 = Runner('John', -5)
+            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evgen\Project_Practic_11_Mod\test_12_4.py", line 19, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
